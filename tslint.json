@@ -1,0 +1,27 @@
+{
+  "extends": ["tslint:recommended", "tslint-config-airbnb"],
+  "linterOptions": {
+    "exclude": ["./node_modules", "./dist"]
+  },
+  "rules": {
+    "no-console": false,
+    "no-increment-decrement": false,
+    "object-literal-sort-keys": false,
+    "member-access": {
+      "options": ["no-public"]
+    },
+    "semicolon": {
+      "options": ["never"]
+    },
+    "max-line-length": {
+      "options": [120]
+    },
+    "variable-name": {
+      "options": ["ban-keywords", "check-format", "allow-leading-underscore"]
+    },
+    "max-file-line-count": {
+      "options": [300]
+    },
+    "ordered-imports": false
+  }
+}

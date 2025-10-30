@@ -1,0 +1,28 @@
+html,
+body {
+  overflow: hidden;
+  background: #000;
+}
+
+canvas {
+  touch-action: none;
+  position: absolute;
+}
+
+@media (orientation: landscape) {
+  #stats {
+    canvas {
+      width: 240px !important;
+      height: 144px !important;
+    }
+  }
+}
+
+@media (orientation: portrait) {
+  #stats {
+    canvas {
+      width: 320px !important;
+      height: 192px !important;
+    }
+  }
+}

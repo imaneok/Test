@@ -1,0 +1,39 @@
+{
+  "name": "softgames-imane-test",
+  "version": "1.0.0",
+  "author": "Imane El Mejdoubi",
+  "description": "",
+  "main": "./index.html",
+  "scripts": {
+    "start": "webpack serve --mode=development --host=0.0.0.0",
+    "build": "webpack --mode=production"
+  },
+  "dependencies": {
+    "@pixi/particle-emitter": "^5.0.8",
+    "gsap": "^3.13.0",
+    "mini-signals": "^1.2.0",
+    "pixi.js": "^7.4.0",
+    "stats.js": "^0.17.0"
+  },
+  "devDependencies": {
+    "@types/gsap": "^1.20.2",
+    "@types/node": "^14.18.63",
+    "@types/stats.js": "^0.17.4",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.10.0",
+    "html-webpack-plugin": "^5.6.4",
+    "prettier": "^3.6.2",
+    "sass": "^1.93.2",
+    "sass-loader": "^13.3.2",
+    "source-map-loader": "^0.2.4",
+    "style-loader": "^3.3.4",
+    "terser-webpack-plugin": "^5.3.14",
+    "ts-loader": "^9.5.4",
+    "typescript": "^4.9.5",
+    "typescript-ioc": "^3.2.2",
+    "webpack": "^5.102.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.2.2",
+    "webpack-merge": "^5.10.0"
+  }
+}
