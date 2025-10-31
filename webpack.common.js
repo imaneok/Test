@@ -3,6 +3,8 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const webpack = require('webpack')
 
+const isProd = process.env.NODE_ENV === 'production';
+
 const webpackPluginList = [
   { from: './assets', to: './assets' },
 ]
@@ -78,7 +80,7 @@ module.exports = {
   },
   output: {
     filename: '[name].js',
-    publicPath: '/',
+    publicPath: isProd ? '/Test/' : '/',
     path: path.resolve(__dirname, 'dist'),
     library: 'Test',
     libraryTarget: 'var',
@@ -90,3 +92,4 @@ module.exports = {
     TweenLite: 'TweenLite',
   },
 }
+
