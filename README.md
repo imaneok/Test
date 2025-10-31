@@ -14,7 +14,7 @@ Run (dev): `npm start` then browse http://localhost:10000
 Build (prod): `npm run build` then use freshly generated "dist" 
 
 ## Technology Used
-* PixiJS
+* PixiJS 
 * TypeScript
 * Webpack
 * NPM
