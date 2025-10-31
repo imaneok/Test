@@ -29,7 +29,7 @@ class Game {
   }
 
   private async loadAssets(): Promise<void> {
-    Assets.add('sprite', '/assets/sprite.json')
+    Assets.add('sprite', 'assets/sprite.json')
     await Assets.load('sprite')
     this.setup()
   }
